@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://PR-botsAI.github.io/prbots-landing/sitemap.xml
+Sitemap: https://prbots.ai/sitemap.xml
