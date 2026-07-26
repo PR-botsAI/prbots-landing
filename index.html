@@ -6,6 +6,10 @@
 
 
 
+
+
+<meta property="og:url" content="https://prbots.ai/">
+<link rel="canonical" href="https://prbots.ai/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='white'/%3E%3Crect x='5' y='24' width='7' height='17' rx='3.5' fill='%2300D4FF'/%3E%3Crect x='52' y='24' width='7' height='17' rx='3.5' fill='%2300D4FF'/%3E%3Crect x='10' y='9' width='44' height='46' rx='17' fill='white' stroke='%23E6E8EC' stroke-width='2'/%3E%3Crect x='16' y='19' width='32' height='24' rx='8' fill='%23FF2DA1' stroke='%230B132B' stroke-width='3'/%3E%3Cpath d='M25 33 Q32 39 39 33' stroke='white' stroke-width='3.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +23,15 @@
 
 
 <!-- SEO Meta Tags -->
-<title>No te lo contamos. Pruébalo tú mismo. | PRbots.AI × PayMeGPT</title>
-<meta name="description" content="Habla con la IA en vivo y siente lo que tu negocio tendría contestando 24/7. Empiezas en $0 — 7 días gratis, sin tarjeta." />
-<meta name="keywords" content="automatización negocios Puerto Rico" />
-<link rel="canonical" href="https://prbots.ai/" />
-<meta property="og:title" content="No te lo contamos. Pruébalo tú mismo. | PRbots.AI × PayMeGPT" />
-<meta property="og:description" content="Habla con la IA en vivo y siente lo que tu negocio tendría contestando 24/7. Empiezas en $0 — 7 días gratis, sin tarjeta." />
+<title>Usamos lo que vendemos: pruébalo en vivo | PRbots.AI</title>
+<meta name="description" content="Esta página, el demo y la campaña social funcionan con PMGPT. Entra, habla con BOTi y mira el sistema trabajando." />
+<meta name="keywords" content="demo automatización negocios Puerto Rico" />
+<meta property="og:title" content="Usamos lo que vendemos: pruébalo en vivo | PRbots.AI" />
+<meta property="og:description" content="Esta página, el demo y la campaña social funcionan con PMGPT. Entra, habla con BOTi y mira el sistema trabajando." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://prbots.ai/" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="No te lo contamos. Pruébalo tú mismo. | PRbots.AI × PayMeGPT" />
-<meta name="twitter:description" content="Habla con la IA en vivo y siente lo que tu negocio tendría contestando 24/7. Empiezas en $0 — 7 días gratis, sin tarjeta." />
+<meta name="twitter:title" content="Usamos lo que vendemos: pruébalo en vivo | PRbots.AI" />
+<meta name="twitter:description" content="Esta página, el demo y la campaña social funcionan con PMGPT. Entra, habla con BOTi y mira el sistema trabajando." />
 <!-- End SEO Meta Tags -->
 <script data-lp-token-hydrate>
 (function(){try{
@@ -312,7 +314,7 @@
     }
   });
 })();
-</script>  <link rel="stylesheet" href="styles.css?v=brand2">
+</script>  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="mesh"></div><div class="grain"></div><div id="pbar"></div>
@@ -334,7 +336,7 @@
         <button id="bES" class="on" onclick="setLang('es')">ES</button>
         <button id="bEN" onclick="setLang('en')">EN</button>
       </div>
-      <a href="https://paymegpt.com?ref=HHJ8V4JE" class="btn bp bsm"><span data-i="navCta">Empieza en $0</span></a>
+      <a href="https://paymegpt.com?ref=HHJ8V4JE&amp;utm_source=prbots.ai&amp;utm_medium=landing_page&amp;utm_campaign=usamos_lo_que_vendemos" class="btn bp bsm" data-cta="sticky-trial"><span data-i="navCta">Empieza en $0</span></a>
     </div>
   </div>
 </nav>
@@ -353,14 +355,14 @@
           <span class="pl">✓ <b data-i="pl3">7 días gratis</b></span>
         </div>
         <div class="cr rv d4">
-          <a href="https://paymegpt.com?ref=HHJ8V4JE" class="btn bp" data-i="hCta1">Quiero una para mi negocio →</a>
+          <a href="https://paymegpt.com?ref=HHJ8V4JE&amp;utm_source=prbots.ai&amp;utm_medium=landing_page&amp;utm_campaign=usamos_lo_que_vendemos" class="btn bp" data-cta="hero-trial" data-i="hCta1">Quiero una para mi negocio →</a>
           <a href="#calc" class="btn bg2" data-i="hCta2">¿Cuánto pierdo hoy? 💸</a>
         </div>
         <div class="tr rv d5" data-i="hTrust">Barberías · Restaurantes · Clínicas · Spas · Agencias · Act 60</div>
       </div>
       <div class="rv d2">
-        <div class="demo">
-          <svg class="m-hero" width="96" height="87" viewBox="0 0 128 116"><use href="#prbot"/></svg>
+        <div class="demo" id="live-demo">
+          <svg class="m-hero" viewBox="0 0 128 116"><use href="#prbot"/></svg>
           <div class="live"><i></i><span data-i="liveTag">Demo en vivo — escríbele, es real</span></div>
           <iframe id="demoFrame" src="https://paymegpt.com/agents/66354092/embed" title="Demo en vivo PRbots.AI" allow="microphone"></iframe>
         </div>
@@ -371,14 +373,64 @@
   <svg class="wave" viewBox="0 0 1440 64" preserveAspectRatio="none"><path d="M0 40 C240 10 480 60 720 36 C960 12 1200 52 1440 28 L1440 64 L0 64 Z" fill="rgba(0,212,255,.05)"/><path d="M0 50 C260 24 520 62 780 44 C1040 26 1240 56 1440 40 L1440 64 L0 64 Z" fill="rgba(255,45,161,.05)"/></svg>
 </header>
 
+<section class="sec" data-section="live-operating-system" style="padding-top:1.5rem;padding-bottom:2rem">
+  <div class="ct">
+    <div class="eb rv" data-i="osEye">ESTO NO ES UNA PRESENTACIÓN</div>
+    <h2 class="st rv d1"><span data-i="osT1">PRbots.AI está operando con lo mismo que te ofrecemos.</span></h2>
+    <p class="ss rv d2" data-i="osBody">Esta página, el demo, la campaña social y la atención de comentarios y DMs funcionan con PMGPT. No te pedimos que imagines el sistema: estás entrando por él ahora mismo.</p>
+    
+    <div class="os-grid rv d3">
+      <div class="os-card">
+        <span class="icon" aria-hidden="true">💬</span>
+        <h4 data-i="osC1">BOTi · Website chat</h4>
+        <p data-i="osC1b">Conversaciones reales bilingües en tu sitio web y voz en vivo.</p>
+      </div>
+      <div class="os-card">
+        <span class="icon" aria-hidden="true">📥</span>
+        <h4 data-i="osC2">COQUÍ · Social inbox</h4>
+        <p data-i="osC2b">Comentarios Instagram/Facebook, DMs, respuestas a stories y enrutamiento por palabras clave.</p>
+      </div>
+      <div class="os-card">
+        <span class="icon" aria-hidden="true">📋</span>
+        <h4 data-i="osC3">Captura de leads</h4>
+        <p data-i="osC3b">Nombre, negocio, municipio, dolor y contacto preferido capturados de forma conversacional.</p>
+      </div>
+      <div class="os-card">
+        <span class="icon" aria-hidden="true">📣</span>
+        <h4 data-i="osC4">Content engine</h4>
+        <p data-i="osC4b">Estrategia de campaña, imágenes, captions y programación diaria creados con PMGPT.</p>
+      </div>
+      <div class="os-card">
+        <span class="icon" aria-hidden="true">🗓️</span>
+        <h4 data-i="osC5">Citas + pagos</h4>
+        <p data-i="osC5b">Capacidades de agendamiento y pagos con Stripe disponibles para tus sistemas.</p>
+      </div>
+      <div class="os-card">
+        <span class="icon" aria-hidden="true">❤️</span>
+        <h4 data-i="osC6">Lealtad + seguimiento</h4>
+        <p data-i="osC6b">Programas Wallet, organización de CRM y automatizaciones de seguimiento.</p>
+      </div>
+    </div>
+
+    <div class="proof-strip rv d4">
+      <span data-i="osProof">La campaña ‘Usamos lo que vendemos’ fue creada y programada desde este mismo stack.</span>
+    </div>
+
+    <div class="cr rv d5" style="justify-content:center">
+      <button onclick="tryBOTi()" class="btn bp" data-cta="live-demo-trial" data-i="osCta1">Probar BOTi ahora →</button>
+      <a href="#social-proof-system" class="btn bg2" data-i="osCta2">Ver cómo funciona el sistema</a>
+    </div>
+  </div>
+</section>
+
 <section class="sec" data-section="pain-points" style="padding-top:3rem">
   <div class="ct">
     <h2 class="st rv"><span data-i="pT1">Marca lo que quieres</span> <span class="gx" data-i="pT2">dejar atrás 👇</span></h2>
     <div class="qg">
-      <div class="bc qc rv d1" onclick="tq(this)"><span class="em">🌙</span><h3 data-i="p1t">Contestar WhatsApp a las 11PM</h3><div class="ck">✓</div></div>
-      <div class="bc qc rv d2" onclick="tq(this)"><span class="em">📅</span><h3 data-i="p2t">El "escríbeme para coordinar"</h3><div class="ck">✓</div></div>
-      <div class="bc qc rv d3" onclick="tq(this)"><span class="em">💸</span><h3 data-i="p3t">Perseguir gente para cobrar</h3><div class="ck">✓</div></div>
-      <div class="bc qc rv d4" onclick="tq(this)"><span class="em">👻</span><h3 data-i="p4t">Clientes que no vuelven</h3><div class="ck">✓</div></div>
+      <div class="bc qc rv d1" onclick="tq(this)" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')tq(this)"><span class="em">🌙</span><h3 data-i="p1t">Contestar WhatsApp a las 11PM</h3><div class="ck">✓</div></div>
+      <div class="bc qc rv d2" onclick="tq(this)" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')tq(this)"><span class="em">📅</span><h3 data-i="p2t">El "escríbeme para coordinar"</h3><div class="ck">✓</div></div>
+      <div class="bc qc rv d3" onclick="tq(this)" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')tq(this)"><span class="em">💸</span><h3 data-i="p3t">Perseguir gente para cobrar</h3><div class="ck">✓</div></div>
+      <div class="bc qc rv d4" onclick="tq(this)" tabindex="0" role="button" onkeydown="if(event.key==='Enter'||event.key===' ')tq(this)"><span class="em">👻</span><h3 data-i="p4t">Clientes que no vuelven</h3><div class="ck">✓</div></div>
     </div>
     <div class="qr rv d4">
       <div class="qb" id="qb" data-i="q0">Toca las tarjetas 👆</div>
@@ -390,7 +442,7 @@
 <section class="sec" data-section="use-cases">
   <div class="ct">
     <div class="eb rv" data-i="uEye">A prueba de todo</div>
-    <h2 class="st rv d1"><span data-i="uT1">Elige tu negocio.</span> <span class="gx" data-i="uT2">Mira cómo entra el dinero.</span></h2>
+    <h2 class="st rv d1"><span data-i="uT1">Elige tu negocio.</span> <span class="gx" data-i="uT2">Mira cómo fluye la conversación</span></h2>
     <div class="tabs rv d2" id="tabs">
       <button class="tab on" onclick="selUC('bar',this)" data-i="ucTbar">💈 Barbería</button>
       <button class="tab" onclick="selUC('res',this)" data-i="ucTres">🍽️ Restaurante</button>
@@ -409,7 +461,7 @@
       </div>
       <div class="ucm">
         <span class="money">💰 <span id="ucm"></span></span>
-        <a href="https://paymegpt.com?ref=HHJ8V4JE" class="btn bp bsm" data-i="uCta">Lo quiero para el mío →</a>
+        <a href="https://paymegpt.com?ref=HHJ8V4JE&amp;utm_source=prbots.ai&amp;utm_medium=landing_page&amp;utm_campaign=usamos_lo_que_vendemos" class="btn bp bsm" data-cta="use-case-trial" data-i="uCta">Lo quiero para el mío →</a>
       </div>
     </div>
   </div>
@@ -440,7 +492,7 @@
             <div class="fine" data-i="cFine">*Estimado ilustrativo. Tu resultado puede variar.</div>
           </div>
           <div style="text-align:center;margin-top:1.3rem">
-            <a href="https://paymegpt.com?ref=HHJ8V4JE" class="btn bp" data-i="cCta">Recuperarlo — gratis 7 días →</a>
+            <a href="https://paymegpt.com?ref=HHJ8V4JE&amp;utm_source=prbots.ai&amp;utm_medium=landing_page&amp;utm_campaign=usamos_lo_que_vendemos" class="btn bp" data-cta="calculator-trial">Recuperarlo — gratis 7 días →</a>
           </div>
         </div>
       </div>
@@ -456,8 +508,47 @@
       <div class="bc fc rv d2"><span class="em">🗓️</span><div><h3 data-i="f2t">Citas automáticas</h3><p data-i="f2b">El cliente se agenda solo.</p></div></div>
       <div class="bc fc rv d3"><span class="em">💰</span><div><h3 data-i="f3t">Pagos con Stripe</h3><p data-i="f3b">Cobra hasta dentro del chat.</p></div></div>
       <div class="bc fc rv d1"><span class="em">📲</span><div><h3 data-i="f4t">Lealtad Wallet</h3><p data-i="f4b">Apple y Google. Adiós papelito.</p></div></div>
-      <div class="bc fc rv d2"><span class="em">🎙️</span><div><h3 data-i="f5t">Voz con IA</h3><p data-i="f5b">Recepcionista sin nómina.</p></div></div>
+      <div class="bc fc rv d2"><span class="em">🎙️</span><div><h3 data-i="f5t">Atiende preguntas y citas por voz</h3><p data-i="f5b">Experiencia natural de voz.</p></div></div>
       <div class="bc fc rv d3"><span class="em">⚡</span><div><h3 data-i="f6t">Modelos líderes</h3><p data-i="f6b">OpenAI, Claude, Gemini y más.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" data-section="social-proof-system" id="social-proof-system">
+  <div class="ct">
+    <div class="eb rv" data-i="socEye">DE POST A CONVERSACIÓN</div>
+    <h2 class="st rv d1"><span data-i="socT1">Un comentario no debería morir en el feed.</span></h2>
+    <p class="ss rv d2" data-i="socBody">COQUÍ puede responder un comentario público, enrutar palabras clave como INFO, DEMO o verticales hacia un DM privado, continuar la conversación de forma natural, calificar el negocio y capturar el lead. La automatización abre la puerta. La conversación mantiene tono humano.</p>
+    
+    <div class="flow-grid rv d3">
+      <div class="flow-step">
+        <div class="num">1</div>
+        <h4 data-i="socStep1">Persona comenta "DEMO"</h4>
+        <p data-i="socStep1b">En una publicación de Instagram o Facebook.</p>
+      </div>
+      <div class="flow-step">
+        <div class="num">2</div>
+        <h4 data-i="socStep2">COQUÍ responde públicamente</h4>
+        <p data-i="socStep2b">Con una respuesta útil y una invitación a continuar en DM.</p>
+      </div>
+      <div class="flow-step">
+        <div class="num">3</div>
+        <h4 data-i="socStep3">Abre el DM y pregunta por el negocio</h4>
+        <p data-i="socStep3b">Nombre, tipo de negocio, municipio y dolor principal.</p>
+      </div>
+      <div class="flow-step">
+        <div class="num">4</div>
+        <h4 data-i="socStep4">Lead organizado para seguimiento</h4>
+        <p data-i="socStep4b">Información guardada automáticamente en el sistema.</p>
+      </div>
+    </div>
+    
+    <div class="callout-box rv d4">
+      <p data-i="socCallout">Pruébalo: comenta DEMO, INFO, BARBERIA, RESTAURANTE, CLINICA, SPA, TIENDA o SERVICIOS en nuestras publicaciones.</p>
+      <div class="soc-btns">
+        <a href="https://www.instagram.com/prbots.ai/" target="_blank" rel="noopener" class="soc-btn">Instagram <span style="font-size:1.3rem">📷</span></a>
+        <a href="https://www.facebook.com/PRbots.AI" target="_blank" rel="noopener" class="soc-btn">Facebook <span style="font-size:1.3rem">👍</span></a>
+      </div>
     </div>
   </div>
 </section>
@@ -481,8 +572,8 @@
         <ul>
           <li><span class="c">✓</span><span data-i="bg1">La IA contesta al instante, 24/7</span></li>
           <li><span class="c">✓</span><span data-i="bg2">Agenda sola, con recordatorios</span></li>
-          <li><span class="c">✓</span><span data-i="bg3">Cobras al momento</span></li>
-          <li><span class="c">✓</span><span data-i="bg4">Lealtad que los trae de vuelta</span></li>
+          <li><span class="c">✓</span><span data-i="bg3">Puedes cobrar dentro del flujo</span></li>
+          <li><span class="c">✓</span><span data-i="bg4">Herramientas para fomentar visitas futuras</span></li>
           <li><span class="c">✓</span><span data-i="bg5">Una plataforma, todo conectado</span></li>
         </ul>
       </div>
@@ -493,14 +584,14 @@
 <section class="sec" data-section="built-with">
   <div class="ct">
     <div class="mb rv">
-      <h2><span data-i="mT1">Esta página — y el chat de arriba —</span> <span class="gx" data-i="mT2">se hicieron con PayMeGPT</span> 🤯</h2>
-      <p data-i="mBody">Sin programadores externos. Eso mismo puedes crear tú — o te lo montamos nosotros.</p>
+      <h2><span data-i="mT1">Esta página, la campaña y la atención social se construyeron con PMGPT.</span></h2>
+      <p data-i="mBody">BOTi demuestra chat y voz. COQUÍ atiende comentarios y DMs. El contenido se crea y se programa desde el mismo stack. Eso mismo podemos diseñar alrededor de tu negocio.</p>
       <div class="mts">
         <span class="mt" data-i="mt1">✓ Orientación gratis en español</span>
         <span class="mt" data-i="mt2">✓ Te lo montamos como servicio si quieres</span>
         <span class="mt" data-i="mt3">✓ No nos necesitas para empezar</span>
       </div>
-      <a href="https://paymegpt.com?ref=HHJ8V4JE" class="btn bp" data-i="mCta">Crear el mío gratis →</a>
+      <a href="https://paymegpt.com?ref=HHJ8V4JE&amp;utm_source=prbots.ai&amp;utm_medium=landing_page&amp;utm_campaign=usamos_lo_que_vendemos" class="btn bp" data-cta="built-with-trial" data-i="mCta">Crear el mío gratis →</a>
     </div>
   </div>
 </section>
@@ -511,10 +602,10 @@
     <div class="stp">
       <div class="bc sc2 rv d1"><div class="sn">1</div><h3 data-i="st1">Entra gratis con el botón — sin tarjeta, sin compromiso.</h3></div>
       <div class="bc sc2 rv d2"><div class="sn">2</div><h3 data-i="st2">Dile a la plataforma qué negocio tienes.</h3></div>
-      <div class="bc sc2 rv d3"><div class="sn">3</div><h3 data-i="st3">Tu bot queda contestando HOY. Así de fácil.</h3></div>
+      <div class="bc sc2 rv d3"><div class="sn">3</div><h3 data-i="st3">Puedes configurar tu bot hoy.</h3></div>
     </div>
     <div style="text-align:center;margin-top:2rem" class="rv d3">
-      <a href="https://paymegpt.com?ref=HHJ8V4JE" class="btn bp" data-i="stCta">Paso 1: entrar gratis →</a>
+      <a href="https://paymegpt.com?ref=HHJ8V4JE&amp;utm_source=prbots.ai&amp;utm_medium=landing_page&amp;utm_campaign=usamos_lo_que_vendemos" class="btn bp" data-cta="steps-trial" data-i="stCta">Paso 1: entrar gratis →</a>
     </div>
   </div>
 </section>
@@ -523,11 +614,11 @@
   <div class="ct">
     <h2 class="st rv" style="text-align:center"><span data-i="qT1">Lo que todos preguntan</span> <span class="gx" data-i="qT2">antes de empezar</span></h2>
     <div class="faq rv d2">
-      <details><summary data-i="fq0">¿Es caro? 👀</summary><div class="a" data-i="fa0">Empiezas en $0: 7 días gratis, sin tarjeta. Los planes los ves adentro — y los comparas con lo que la calculadora dice que pierdes cada mes.</div></details>
-      <details><summary data-i="fq1">¿De verdad sin tarjeta de crédito?</summary><div class="a" data-i="fa1">De verdad. Solo tu info básica. Si no te convence, no pagas nada y ya.</div></details>
-      <details><summary data-i="fq2">¿Funciona en español?</summary><div class="a" data-i="fa2">Sí — español e inglés, chat y voz. Y nuestra orientación es en español, con acento de aquí.</div></details>
-      <details><summary data-i="fq3">No sé de tecnología. ¿Puedo?</summary><div class="a" data-i="fa3">Sí. Está hecha para dueños de negocio, no programadores. Y si quieres cero estrés, te lo montamos nosotros.</div></details>
-      <details><summary data-i="fq4">¿Qué pasa el día 8?</summary><div class="a" data-i="fa4">Tú decides: eliges plan si te funcionó, o no sigues. Nunca hay cobro automático — no diste tarjeta.</div></details>
+      <details><summary data-i="fq0" tabindex="0">¿Es caro? 👀</summary><div class="a" data-i="fa0">Empiezas en $0: 7 días gratis, sin tarjeta. Los planes los ves adentro — y los comparas con lo que la calculadora dice que pierdes cada mes.</div></details>
+      <details><summary data-i="fq1" tabindex="0">¿De verdad sin tarjeta de crédito?</summary><div class="a" data-i="fa1">De verdad. Solo tu info básica. Si no te convence, no pagas nada y ya.</div></details>
+      <details><summary data-i="fq2" tabindex="0">¿Funciona en español?</summary><div class="a" data-i="fa2">Sí — español e inglés, chat y voz. Y nuestra orientación es en español, con acento de aquí.</div></details>
+      <details><summary data-i="fq3" tabindex="0">No sé de tecnología. ¿Puedo?</summary><div class="a" data-i="fa3">Sí. Está hecha para dueños de negocio, no programadores. Y si quieres cero estrés, te lo montamos nosotros.</div></details>
+      <details><summary data-i="fq4" tabindex="0">¿Qué pasa el día 8?</summary><div class="a" data-i="fa4">Tú decides: eliges plan si te funcionó, o no sigues. Nunca hay cobro automático — no diste tarjeta.</div></details>
     </div>
   </div>
 </section>
@@ -537,11 +628,11 @@
     <div class="fb2 rv">
       <h2><span data-i="finA">VENDE. COBRA.</span> <span class="gx" data-i="finMid">AUTOMATIZA.</span> <span data-i="finB">ESCALA.</span></h2>
       <p data-i="finP">Ya hablaste con la IA. Ya viste los números. Lo único que falta eres tú.</p>
-      <a href="https://paymegpt.com?ref=HHJ8V4JE" class="btn bp" style="font-size:1.1rem;padding:1.15rem 2.6rem" data-i="finCta">Activar mis 7 días gratis →</a>
+      <a href="https://paymegpt.com?ref=HHJ8V4JE&amp;utm_source=prbots.ai&amp;utm_medium=landing_page&amp;utm_campaign=usamos_lo_que_vendemos" class="btn bp" style="font-size:1.1rem;padding:1.15rem 2.6rem" data-cta="final-trial" data-i="finCta">Activar mis 7 días gratis →</a>
       <div class="gr">
         <span><b>✓</b> <span data-i="g1">Empiezas en $0</span></span>
         <span><b>✓</b> <span data-i="g2">Cancela cuando quieras</span></span>
-        <span><b>✓</b> <span data-i="g3">Tu primer bot hoy</span></span>
+        <span><b>✓</b> <span data-i="g3">Puedes empezar hoy</span></span>
       </div>
     </div>
   </div>
@@ -558,11 +649,11 @@
 </footer>
 
 <div id="sbar" data-section="sticky-cta">
-  <div class="t"><span data-i="sbT">Empieza en $0 · Sin tarjeta</span><small data-i="sbS">Tu negocio contestando 24/7 desde hoy</small></div>
-  <a href="https://paymegpt.com?ref=HHJ8V4JE" class="btn bp bsm" data-i="sbCta">Activar →</a>
+  <div class="t"><span data-i="sbT">Empieza en $0 · Sin tarjeta</span><small data-i="sbS">Configura atención 24/7 para tu negocio</small></div>
+  <a href="https://paymegpt.com?ref=HHJ8V4JE&amp;utm_source=prbots.ai&amp;utm_medium=landing_page&amp;utm_campaign=usamos_lo_que_vendemos" class="btn bp bsm" data-cta="sticky-trial" data-i="sbCta">Activar →</a>
 </div>
 
 
-  <script src="script.js?v=brand2"></script>
+  <script src="script.js"></script>
 </body>
 </html>
