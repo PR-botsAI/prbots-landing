@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PRbots Radio Lab — Puerto Rico indie music, Caribbean future sounds and AI radio.">
+  <title>PRbots Radio Lab</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="eyebrow">PRBOTS.AI PRESENTS</p>
+      <h1 data-station-name>PRbots Radio Lab</h1>
+      <p class="tagline" data-tagline>Puerto Rico indie music, Caribbean future sounds &amp; AI radio</p>
+    </header>
+
+    <section class="player-card" aria-labelledby="now-playing-heading">
+      <div class="artwork-wrap" aria-hidden="true">
+        <div class="artwork-fallback">PR</div>
+        <img data-artwork hidden alt="">
+      </div>
+
+      <div class="player-content">
+        <div class="status-row">
+          <span class="badge" data-live-badge data-live="false">AUTODJ</span>
+          <span data-listeners>0 listeners</span>
+        </div>
+
+        <p class="section-label" id="now-playing-heading">Now Playing</p>
+        <h2 data-title>Waiting for the AzuraCast signal</h2>
+        <p class="artist" data-artist>PRbots Radio Lab</p>
+
+        <div class="progress-row">
+          <span data-elapsed>0:00</span>
+          <progress data-progress max="100" value="0">0%</progress>
+          <span data-duration>LIVE</span>
+        </div>
+
+        <button class="play-button" type="button" data-play aria-pressed="false">Listen Live</button>
+        <p class="connection-status" data-status aria-live="polite">Preparing player…</p>
+        <audio preload="none" crossorigin="anonymous"></audio>
+      </div>
+    </section>
+
+    <section class="history-card" aria-labelledby="recent-heading">
+      <div>
+        <p class="section-label">The rotation</p>
+        <h2 id="recent-heading">Recently Played</h2>
+      </div>
+      <ol data-history></ol>
+    </section>
+
+    <section class="capabilities" aria-labelledby="capabilities-heading">
+      <p class="section-label">Built as a live capabilities showcase</p>
+      <h2 id="capabilities-heading">Streaming + AI + Community</h2>
+      <div class="capability-grid">
+        <article><h3>24/7 AutoDJ</h3><p>Scheduled music, IDs, transitions and live handoffs powered by AzuraCast.</p></article>
+        <article><h3>Live DJs</h3><p>Mixxx connects through an individual DJ account without interrupting AutoDJ.</p></article>
+        <article><h3>AI Concierge</h3><p>PMGPT can answer questions, collect artist submissions and grow the audience.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <script src="./config.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
