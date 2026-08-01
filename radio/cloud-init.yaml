@@ -1,0 +1,42 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+packages:
+  - curl
+  - git
+  - ufw
+  - fail2ban
+  - unattended-upgrades
+
+write_files:
+  - path: /etc/ssh/sshd_config.d/99-radio-hardening.conf
+    permissions: '0644'
+    content: |
+      PasswordAuthentication no
+      PermitRootLogin prohibit-password
+      X11Forwarding no
+  - path: /etc/ufw/applications.d/azuracast-radio
+    permissions: '0644'
+    content: |
+      [AzuraCast Radio]
+      title=AzuraCast Radio
+      description=Web, secure web, and common AzuraCast streaming ports
+      ports=80,443/tcp|8000:8500/tcp
+
+runcmd:
+  - systemctl restart ssh
+  - ufw default deny incoming
+  - ufw default allow outgoing
+  - ufw allow OpenSSH
+  - ufw allow 'AzuraCast Radio'
+  - ufw --force enable
+  - systemctl enable --now fail2ban
+  - mkdir -p /var/azuracast
+  - cd /var/azuracast && curl -fsSL https://raw.githubusercontent.com/AzuraCast/AzuraCast/main/docker.sh -o docker.sh
+  - chmod +x /var/azuracast/docker.sh
+
+final_message: |
+  Server bootstrap complete. SSH into the server and run:
+    cd /var/azuracast
+    sudo ./docker.sh install
+  Review the official AzuraCast installation prompts before confirming.
