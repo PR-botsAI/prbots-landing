@@ -1,0 +1,115 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #07070a;
+  color: #f7f7fb;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(255, 45, 161, .22), transparent 28rem),
+    radial-gradient(circle at 85% 25%, rgba(54, 214, 181, .16), transparent 24rem),
+    #07070a;
+}
+
+button, audio { font: inherit; }
+
+.shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 72px 0 96px;
+}
+
+.hero { max-width: 820px; margin-bottom: 36px; }
+.eyebrow, .section-label {
+  margin: 0 0 10px;
+  color: #ff74bf;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+h1, h2, h3, p { margin-top: 0; }
+h1 { margin-bottom: 14px; font-size: clamp(3rem, 8vw, 6.8rem); line-height: .9; letter-spacing: -.07em; }
+h2 { margin-bottom: 8px; font-size: clamp(1.75rem, 4vw, 3rem); line-height: 1; letter-spacing: -.04em; }
+h3 { margin-bottom: 8px; font-size: 1.05rem; }
+.tagline { max-width: 680px; color: #bdbdca; font-size: clamp(1rem, 2.5vw, 1.35rem); }
+
+.player-card, .history-card, .capabilities {
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(18,18,24,.76);
+  box-shadow: 0 24px 80px rgba(0,0,0,.32);
+  backdrop-filter: blur(16px);
+}
+
+.player-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 390px) 1fr;
+  gap: clamp(24px, 5vw, 64px);
+  padding: clamp(18px, 4vw, 38px);
+  border-radius: 30px;
+}
+
+.artwork-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #ff2da1, #6334ff 52%, #36d6b5);
+}
+
+.artwork-wrap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.artwork-fallback { display: grid; place-items: center; width: 100%; height: 100%; color: rgba(255,255,255,.94); font-size: clamp(4rem, 13vw, 9rem); font-weight: 950; letter-spacing: -.1em; }
+.player-content { display: flex; min-width: 0; flex-direction: column; justify-content: center; }
+.status-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 30px; color: #aaaab6; font-size: .9rem; }
+.badge { padding: 7px 10px; border-radius: 999px; background: rgba(255,255,255,.08); color: #dedee6; font-size: .72rem; font-weight: 850; letter-spacing: .1em; }
+.badge[data-live="true"] { background: #ff2d55; color: white; }
+.artist { color: #bcbcc7; font-size: 1.1rem; }
+
+.progress-row { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; margin: 18px 0 24px; color: #8f8f9a; font-size: .78rem; }
+progress { width: 100%; height: 5px; overflow: hidden; border: 0; border-radius: 999px; appearance: none; }
+progress::-webkit-progress-bar { background: rgba(255,255,255,.1); }
+progress::-webkit-progress-value { background: linear-gradient(90deg, #ff2da1, #36d6b5); }
+progress::-moz-progress-bar { background: linear-gradient(90deg, #ff2da1, #36d6b5); }
+
+.play-button {
+  align-self: flex-start;
+  min-width: 150px;
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 999px;
+  background: #f7f7fb;
+  color: #09090c;
+  font-weight: 850;
+  cursor: pointer;
+  transition: transform .16s ease, opacity .16s ease;
+}
+.play-button:hover { transform: translateY(-2px); }
+.play-button:focus-visible { outline: 3px solid #36d6b5; outline-offset: 3px; }
+.connection-status { margin: 14px 0 0; color: #777785; font-size: .82rem; }
+
+.history-card, .capabilities { margin-top: 24px; padding: clamp(24px, 5vw, 48px); border-radius: 26px; }
+.history-card { display: grid; grid-template-columns: minmax(220px, .8fr) 1.2fr; gap: 32px; }
+ol { margin: 0; padding-left: 1.4rem; color: #c7c7d0; }
+li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.07); }
+li:last-child { border-bottom: 0; }
+.capability-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 28px; }
+.capability-grid article { padding: 22px; border-radius: 18px; background: rgba(255,255,255,.045); }
+.capability-grid p { margin-bottom: 0; color: #a9a9b5; line-height: 1.6; }
+
+@media (max-width: 760px) {
+  .shell { padding-top: 44px; }
+  .player-card, .history-card { grid-template-columns: 1fr; }
+  .artwork-wrap { max-width: 480px; width: 100%; }
+  .capability-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
