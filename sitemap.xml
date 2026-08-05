@@ -2,7 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://prbots.ai/</loc>
-    <lastmod>2026-07-26T13:44:24.998Z</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://prbots.ai/radio/</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://prbots.ai/diosfm/</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>daily</changefreq>
   </url>
 </urlset>
